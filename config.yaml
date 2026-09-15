@@ -1,0 +1,17 @@
+data:
+  file_path: "data/regression_bonus_practice_data.csv"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  default_alpha: 1.0
+
+tuning:
+  alpha_values:
+    - 0.01
+    - 0.1
+    - 1
+    - 10
+    - 100
+  cv_folds: 5
+  scoring: "neg_mean_squared_error"
